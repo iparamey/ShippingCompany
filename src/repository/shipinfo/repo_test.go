@@ -1,4 +1,4 @@
-package shippinginformation
+package shipinfo
 
 import (
 	"testing"
@@ -17,6 +17,11 @@ var si = ShippingInfo {
 func TestShippingRepo(t *testing.T) {
 	sr := ShipScheduleRepository(db.GetDBConnection())
 	err := sr.CreateShippingInfo(&si)
+	if err != nil {
+		t.Error(err)
+	}
+
+	_, err = sr.RetrieveAllSchedule()
 	if err != nil {
 		t.Error(err)
 	}

@@ -1,6 +1,6 @@
 package generalcargo
 
 type GeneralCargo struct {
-	CargoID      int
-	VoyageNumber int
+	CargoID      int 	`json:"cargoid"`
+	VoyageNumber int	`json:"voyagenumber"`
 }

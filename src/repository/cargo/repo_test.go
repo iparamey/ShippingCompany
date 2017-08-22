@@ -3,7 +3,6 @@ package cargo
 import (
 	"testing"
 	"db"
-	"fmt"
 )
 
 var cargo = Cargo {
