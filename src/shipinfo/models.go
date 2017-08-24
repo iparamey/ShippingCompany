@@ -20,5 +20,3 @@ type Schedule struct {
 	EndDate		   string	`json:"enddate"`
 	Cargo 		   []string	`json:"cargo"`
 }
-
-

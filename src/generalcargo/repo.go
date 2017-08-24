@@ -3,7 +3,6 @@ package generalcargo
 import (
 	"database/sql"
 	"db"
-	"github.com/golang/go/src/pkg/go/doc/testdata"
 )
 
 type Repository interface {
