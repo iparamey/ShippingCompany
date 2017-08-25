@@ -10,6 +10,7 @@ import (
 	"shipinfo"
 	"generalcargo"
 	"github.com/golang/go/src/pkg/strconv"
+	"fmt"
 )
 
 type appHandler struct {
@@ -44,11 +45,13 @@ func GetScheduleHandler(a *cont.AppContext, w http.ResponseWriter, r *http.Reque
 func CreateShippingInfoHandler(a *cont.AppContext, wr http.ResponseWriter, req *http.Request) (int, error) {
 	si := shipinfo.ShippingInfo{}
 	decoder := json.NewDecoder(req.Body)
+	fmt.Println(decoder)
 	err := decoder.Decode(&si)
 	if err != nil {
 		log.Println(err.Error())
 		return 400, err
 	}
+	fmt.Println(si)
 
 	err = a.Repo.ShipInfoRepository.CreateShippingInfo(&si)
 	if err != nil {
