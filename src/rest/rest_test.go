@@ -2,42 +2,34 @@ package rest
 
 import (
 	"testing"
-	"time"
 	"github.com/mux"
-	"github.com/golang/go/src/pkg/log"
+	"log"
 	"net/http"
-	"net/url"
-	"github.com/golang/go/src/pkg/bytes"
 	"fmt"
+	"net/url"
 )
 
 func TestCreateShippingInfoHandler(t *testing.T) {
 	router := mux.NewRouter()
 	ctx := GetContext()
+	fmt.Println("1")
 	router.HandleFunc("/si", appHandler{ctx, CreateShippingInfoHandler}.ServerHTTP).Methods("POST")
-	log.Fatal(http.ListenAndServe(":8080", router))
+	fmt.Println("1")
+	router.HandleFunc("/cargo", appHandler{ctx, AddCargoHandler}.ServerHTTP).Methods("POST")
+	fmt.Println("1")
 
 	form := url.Values{}
+	form.Add("voyagenumber", "8")
+	form.Add("cargoid", "3")
 
-	form.Add("voyagenumber", "5")
-	form.Add("startingpoint", "5")
-	form.Add("endpoint", "3")
-	form.Add("startdate", time.Now().String())
-	form.Add("startdate", time.Now().Add(time.Hour).String())
-	form.Add("ship", "2")
 
-	req, err := http.NewRequest("POST", "localhost:8080/si", bytes.NewBufferString(form.Encode()))
-
-	req.Header.Set("Content-Type", "application/x-www-form-urlencoded; param=value")
-
+	_, err := http.PostForm("https://localhost:8080/cargo", form)
 	if err != nil {
-		t.Errorf("New shipping info wasn't created: %s", err)
+		fmt.Println(err.Error())
 	}
+	//defer resp.Body.Close()
 
-	client := &http.Client{}
-	resp, _ := client.Do(req)
-	fmt.Print(resp.Status)
-
+	log.Fatal(http.ListenAndServe(":8080", router))
 
 }
 

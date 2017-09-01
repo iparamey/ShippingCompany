@@ -43,6 +43,7 @@ func GetScheduleHandler(a *cont.AppContext, w http.ResponseWriter, r *http.Reque
 }
 
 func CreateShippingInfoHandler(a *cont.AppContext, wr http.ResponseWriter, req *http.Request) (int, error) {
+	fmt.Println("go")
 	si := shipinfo.ShippingInfo{}
 	decoder := json.NewDecoder(req.Body)
 	fmt.Println(decoder)
@@ -130,23 +131,23 @@ func checkCargoByVN(gc *generalcargo.GeneralCargo) (err error, check bool) {
 }
 
 
-func StartRestApi() {
-	router := mux.NewRouter()
-	config := &db.Config{}
-	config.Default()
-	context := &cont.AppContext{
-		DB:    &db.DB{},
-		Repo:  &cont.Repositories{},
-	}
-	context.DB.Initialize(config)
-	context.Repo.Initialize(context.DB)
-
-	router.HandleFunc("/schedule", appHandler{context, GetScheduleHandler}.ServerHTTP).Methods("GET")
-	router.HandleFunc("/si", appHandler{context, CreateShippingInfoHandler}.ServerHTTP).Methods("POST")
-	router.HandleFunc("/cargo", appHandler{context, AddCargoHandler}.ServerHTTP).Methods("POST")
-	router.HandleFunc("/si/{vn}", appHandler{context, DeleteShippingInfo}.ServerHTTP).Methods("DELETE")
-
-	log.Fatal(http.ListenAndServe(":8080", router))
-
-}
+//func StartRestApi() {
+//	router := mux.NewRouter()
+//	config := &db.Config{}
+//	config.Default()
+//	context := &cont.AppContext{
+//		DB:    &db.DB{},
+//		Repo:  &cont.Repositories{},
+//	}
+//	context.DB.Initialize(config)
+//	context.Repo.Initialize(context.DB)
+//
+//	router.HandleFunc("/schedule", appHandler{context, GetScheduleHandler}.ServerHTTP).Methods("GET")
+//	router.HandleFunc("/si", appHandler{context, CreateShippingInfoHandler}.ServerHTTP).Methods("POST")
+//	router.HandleFunc("/cargo", appHandler{context, AddCargoHandler}.ServerHTTP).Methods("POST")
+//	router.HandleFunc("/si/{vn}", appHandler{context, DeleteShippingInfo}.ServerHTTP).Methods("DELETE")
+//
+//	log.Fatal(http.ListenAndServe(":8080", router))
+//
+//}
 
