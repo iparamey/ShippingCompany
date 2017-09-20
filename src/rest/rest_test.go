@@ -2,14 +2,13 @@ package rest
 
 import (
 	"testing"
-	"github.com/mux"
 	"log"
 	"generalcargo"
 	"bytes"
 	"encoding/json"
 	"net/http"
 	"fmt"
-	"math/rand"
+	"shipinfo"
 	"time"
 )
 
@@ -18,40 +17,17 @@ var cargo = generalcargo.GeneralCargo{
 	VoyageNumber: 8,
 }
 
+var si = shipinfo.ShippingInfo{
+	VoyageNumber: 9,
+	StartingPoint: 4,
+	FinalDestination: 6,
+	StartDate: time.Now().Add(time.Hour),
+	EndDate: time.Now().Add(120*time.Hour),
+	Ship: 5,
+
+}
+
 var channel int
-
-func randInt(min int, max int) int {
-	rand.Seed(time.Now().UTC().UnixNano())
-	return min + rand.Intn(max-min)
-}
-
-func startServer() {
-	router := mux.NewRouter()
-	ctx := GetContext()
-	router.HandleFunc("/", appHandler{ctx, GetScheduleHandler}.ServerHTTP).Methods("GET")
-	router.HandleFunc("/si", appHandler{ctx, CreateShippingInfoHandler}.ServerHTTP).Methods("POST")
-	router.HandleFunc("/cargo", appHandler{ctx, AddCargoHandler}.ServerHTTP).Methods("POST")
-
-	log.Fatal(http.ListenAndServe(":8080", router))
-}
-
-func startHttpServer(ch int) {
-	router := mux.NewRouter()
-	ctx := GetContext()
-	router.HandleFunc("/", appHandler{ctx, GetScheduleHandler}.ServerHTTP).Methods("GET")
-	router.HandleFunc("/cargo", appHandler{ctx, AddCargoHandler}.ServerHTTP).Methods("POST")
-
-	addr := fmt.Sprintf(":%d", ch)
-	srv := &http.Server{Addr: addr, Handler: router}
-
-	go func() {
-		if err := srv.ListenAndServe(); err != nil {
-			log.Printf("listen: %s\n", err)
-		}
-	}()
-
-	srv.Shutdown(nil)
-}
 
 func TestAddCargoHandler(t *testing.T) {
 	channel = randInt(1000, 65000)
@@ -60,8 +36,24 @@ func TestAddCargoHandler(t *testing.T) {
 	b := new(bytes.Buffer)
 	json.NewEncoder(b).Encode(cargo)
 
-	addr := fmt.Sprintf("http://localhost:%d/cargo", channel)
-	_, err := http.Post(addr, "application/json; charset=utf-8", b)
+	url := fmt.Sprintf("http://localhost:%d/cargo", channel)
+	_, err := http.Post(url, "application/json; charset=utf-8", b)
+	if err != nil {
+		log.Fatal("Something gone wrong: " + err.Error())
+	}
+
+}
+
+func TestCreateShippingInfoHandler(t *testing.T) {
+	channel = randInt(1000, 65000)
+	startHttpServer(channel)
+
+	fmt.Println("Test Create Shipping Info Handler")
+	b := new(bytes.Buffer)
+	json.NewEncoder(b).Encode(si)
+
+	url := fmt.Sprintf("http://localhost:%d/si", channel)
+	_, err := http.Post(url, "application/json; charset=utf-8", b)
 	if err != nil {
 		log.Fatal("Something gone wrong: " + err.Error())
 	}
@@ -72,9 +64,9 @@ func TestGetScheduleHandler(t *testing.T) {
 	channel = randInt(1000, 65000)
 	startHttpServer(channel)
 
-	addr := fmt.Sprintf("http://localhost:%d/", channel)
+	url := fmt.Sprintf("http://localhost:%d/", channel)
 
-	_, err := http.Get(addr)
+	_, err := http.Get(url)
 
 	if err != nil {
 		log.Fatal("Wrong request: " + err.Error())
