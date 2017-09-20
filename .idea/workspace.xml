@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b74a00a-8933-4169-8919-d0f9a6fda48a" name="Default" comment="first commit for my project ShippingCompany">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/gorilla/mux.a" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/gorilla/mux.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cont/context.go" afterPath="$PROJECT_DIR$/src/cont/context.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/rest_test.go" afterPath="$PROJECT_DIR$/src/rest/rest_test.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/restapi.go" afterPath="$PROJECT_DIR$/src/rest/restapi.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/test_helper.go" afterPath="$PROJECT_DIR$/src/rest/test_helper.go" />
     </list>
     <ignored path="ShippingCompany.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,25 +37,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rest_test.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rest/rest_test.go">
+      <file leaf-file-name="restapi.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rest/restapi.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82236844">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
-                <element signature="e#14#165#0" expanded="true" />
+                <element signature="e#14#196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restapi.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rest/restapi.go">
+      <file leaf-file-name="repo.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generalcargo/repo.go">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rest_test.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rest/rest_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.74759614">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
-                <element signature="e#14#196#0" expanded="true" />
+                <element signature="e#14#142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,8 +77,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Go Application" />
         <option value="Class" />
+        <option value="Go Application" />
         <option value="Go File" />
       </list>
     </option>
@@ -83,8 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/repository/ship/repo.go" />
-        <option value="$PROJECT_DIR$/repository/ship/repo_test.go" />
         <option value="$PROJECT_DIR$/repository/port/repo.go" />
         <option value="$PROJECT_DIR$/repository/port/repo_test.go" />
         <option value="$PROJECT_DIR$/repository/cargo/models.go" />
@@ -111,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/repository/cargo/repo_test.go" />
         <option value="$PROJECT_DIR$/src/auth/auth.go" />
         <option value="$PROJECT_DIR$/src/auth/model.go" />
-        <option value="$PROJECT_DIR$/src/db/db.go" />
         <option value="$PROJECT_DIR$/src/repository/shippinginformation/repo_test.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/src/repository/shippinginformation/models.go" />
@@ -125,11 +133,16 @@
         <option value="$PROJECT_DIR$/src/context/context.go" />
         <option value="$PROJECT_DIR$/src/generalcargo/repo.go" />
         <option value="$PROJECT_DIR$/src/cont/context2.go" />
-        <option value="$PROJECT_DIR$/src/cont/context.go" />
         <option value="$PROJECT_DIR$/src/shipinfo/models.go" />
         <option value="$PROJECT_DIR$/src/rest/rest.go" />
         <option value="$PROJECT_DIR$/src/rest/helper.go" />
         <option value="$PROJECT_DIR$/src/rest/test_helper.go" />
+        <option value="$PROJECT_DIR$/src/db/db.go" />
+        <option value="$PROJECT_DIR$/src/model.go" />
+        <option value="$PROJECT_DIR$/src/cont/context.go" />
+        <option value="$PROJECT_DIR$/src/main.go" />
+        <option value="$PROJECT_DIR$/src/shipinfo/app.go" />
+        <option value="$PROJECT_DIR$/src/app.go" />
         <option value="$PROJECT_DIR$/src/rest/restapi.go" />
         <option value="$PROJECT_DIR$/src/rest/rest_test.go" />
       </list>
@@ -148,9 +161,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="687" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="807" />
+    <option name="width" value="944" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -177,8 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -191,82 +205,6 @@
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GOPATH &lt;ShippingCompany&gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playq.net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShippingCompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GOPATH &lt;ShippingCompany&gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playq.net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShippingCompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GOPATH &lt;ShippingCompany&gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playq.net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShippingCompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GOPATH &lt;ShippingCompany&gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShippingCompany" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -307,6 +245,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShippingCompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShippingCompany" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generalcargo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,22 +293,12 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCreateShippingInfoHandler in rest_test.go">
-    <configuration default="false" name="go run main.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+  <component name="RunManager" selected="Go Test.All in 'rest'">
+    <configuration default="false" name="Build main.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="ShippingCompany" />
       <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestStartRestService in rest_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
-      <module name="ShippingCompany" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="rest" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^TestStartRestService$" />
+      <filePath value="$PROJECT_DIR$/src/main.go" />
+      <kind value="FILE" />
       <method />
     </configuration>
     <configuration default="false" name="TestCreateShippingInfoHandler in rest_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
@@ -361,7 +307,35 @@
       <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="rest" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <pattern value="^TestCreateShippingInfoHandler$" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCreateCargo in rest_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="ShippingCompany" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="rest" />
+      <pattern value="^TestCreateCargo$" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in 'rest'" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="ShippingCompany" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="rest" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestGetScheduleHandler in rest_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="ShippingCompany" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="rest" />
+      <pattern value="^TestGetScheduleHandler$" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -805,27 +779,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="cargo_test" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="ShippingCompany" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/repository/cargo/repo_test.go" />
-      <pattern value="TestCreateCargo" />
-      <method />
-    </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Go Test.cargo_test" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Test.TestStartRestService in rest_test.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Test.TestCreateShippingInfoHandler in rest_test.go" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
+      <item index="1" class="java.lang.String" itemvalue="Go Test.TestCreateShippingInfoHandler in rest_test.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Test.TestCreateCargo in rest_test.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Test.All in 'rest'" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.TestGetScheduleHandler in rest_test.go" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Test.TestCreateShippingInfoHandler in rest_test.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.TestStartRestService in rest_test.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Test.All in 'rest'" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestGetScheduleHandler in rest_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Test.TestCreateCargo in rest_test.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Test.TestCreateShippingInfoHandler in rest_test.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
       </list>
     </recent_temporary>
   </component>
@@ -871,7 +838,27 @@
       <workItem from="1503480706201" duration="8024000" />
       <workItem from="1503524663743" duration="1994000" />
       <workItem from="1503575049594" duration="4755000" />
-      <workItem from="1503666006734" duration="6267000" />
+      <workItem from="1503666006734" duration="6833000" />
+      <workItem from="1503910305721" duration="2632000" />
+      <workItem from="1503913228064" duration="3455000" />
+      <workItem from="1503919330767" duration="1581000" />
+      <workItem from="1503946668855" duration="7000" />
+      <workItem from="1503947304030" duration="54000" />
+      <workItem from="1503947381933" duration="3548000" />
+      <workItem from="1503958185899" duration="184000" />
+      <workItem from="1503960620435" duration="1288000" />
+      <workItem from="1503990318971" duration="1084000" />
+      <workItem from="1504032167899" duration="1382000" />
+      <workItem from="1504039176322" duration="3200000" />
+      <workItem from="1504472812785" duration="4048000" />
+      <workItem from="1504523977212" duration="1424000" />
+      <workItem from="1504527119442" duration="538000" />
+      <workItem from="1504529512740" duration="49000" />
+      <workItem from="1504561447067" duration="129000" />
+      <workItem from="1504699723700" duration="6000" />
+      <workItem from="1504858757634" duration="1730000" />
+      <workItem from="1504860675875" duration="14565000" />
+      <workItem from="1505907239072" duration="1901000" />
     </task>
     <task id="LOCAL-00001" summary="first commit for my project ShippingCompany">
       <created>1503406893496</created>
@@ -879,60 +866,74 @@
       <option name="project" value="LOCAL" />
       <updated>1503406893496</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit for my project ShippingCompany">
+      <created>1504257810892</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504257810892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 35m 01s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 00h 51m 57s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 38m 48s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 00h 55m 44s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 39m 06s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 00h 56m 38s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 52m 25s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 16h 31m 24s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 54m 48s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 16h 31m 35s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 01h 54m 51s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 16h 31m 47s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 02h 01m 27s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 17h 53m 59s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 02h 04m 03s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 17h 56m 47s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 02h 04m 04s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.11 at 17h 57m 58s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestCreateShippingInfoHandler_in_rest_test_go - 2017.08.26 at 02h 09m 09s.xml">
-      <configuration name="TestCreateShippingInfoHandler in rest_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="All_in__rest_ - 2017.09.20 at 16h 48m 04s.xml">
+      <configuration name="All in 'rest'" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157423000" />
+    <option name="totallyTimeSpent" value="200794000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
+    <frame x="687" y="23" width="944" height="743" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3146853" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32307693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2734255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19237289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23447771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -945,6 +946,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953683" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -969,38 +971,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../tg-portal/src/playq.net/marketing/repo.go">
+    <entry file="file://$PROJECT_DIR$/src/cont/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1565762">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ship/repo_test.go">
+    <entry file="file://$PROJECT_DIR$/src/cont/context.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/port/repo_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tg-portal/src/playq.net/analytics/repo_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../tg-portal/src/playq.net/apps/repo_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1018,18 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/generalcargo/repo_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/net/http/request.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.8984548">
           <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cargo/models.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12278308">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ship/repo.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1142,14 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generalcargo/repo.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12987013">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,15 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/db.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,17 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cont/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#14#67#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,7 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="189" column="52" selection-start-line="189" selection-start-column="52" selection-end-line="189" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,9 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <marker date="1503404938000" expanded="true" signature="1073:1886" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1276,15 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10885341">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generalcargo/models.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08708273">
-          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1292,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5892597">
           <caret line="704" column="17" selection-start-line="704" selection-start-column="17" selection-end-line="704" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1300,17 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36580086">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rest/test_helper.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48701298">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,7 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40350878">
           <caret line="173" column="8" selection-start-line="173" selection-start-column="8" selection-end-line="173" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39473686">
           <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,6 +1241,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0263157">
           <caret line="274" column="39" selection-start-line="274" selection-start-column="39" selection-end-line="274" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/http/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6382306">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bash_profile.save">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generalcargo/repo_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27710843">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cargo/models.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20179372">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.264">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/errors/example_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cont/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rest/test_helper.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60674155">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generalcargo/models.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13483146">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1341,19 +1312,27 @@
     <entry file="file://$PROJECT_DIR$/src/rest/restapi.go">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="e#14#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/generalcargo/repo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rest/rest_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82236844">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.74759614">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
-            <element signature="e#14#165#0" expanded="true" />
+            <element signature="e#14#142#0" expanded="true" />
           </folding>
         </state>
       </provider>

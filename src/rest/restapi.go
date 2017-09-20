@@ -63,6 +63,7 @@ func CreateShippingInfoHandler(a *cont.AppContext, wr http.ResponseWriter, req *
 }
 
 func AddCargoHandler (a *cont.AppContext, wr http.ResponseWriter, req *http.Request) (int, error){
+	fmt.Println("Starting Add Cargo Handler...")
 	gc := generalcargo.GeneralCargo{}
 	decoder := json.NewDecoder(req.Body)
 	err := decoder.Decode(&gc)
@@ -85,7 +86,7 @@ func AddCargoHandler (a *cont.AppContext, wr http.ResponseWriter, req *http.Requ
 		log.Println(err.Error())
 		return 400, err
 	}
-	log.Println("Success")
+	log.Println("New cargo was successfully added to General Cargo")
 
 	return 200, nil
 }
@@ -129,25 +130,4 @@ func checkCargoByVN(gc *generalcargo.GeneralCargo) (err error, check bool) {
 
 	return nil, check
 }
-
-
-//func StartRestApi() {
-//	router := mux.NewRouter()
-//	config := &db.Config{}
-//	config.Default()
-//	context := &cont.AppContext{
-//		DB:    &db.DB{},
-//		Repo:  &cont.Repositories{},
-//	}
-//	context.DB.Initialize(config)
-//	context.Repo.Initialize(context.DB)
-//
-//	router.HandleFunc("/schedule", appHandler{context, GetScheduleHandler}.ServerHTTP).Methods("GET")
-//	router.HandleFunc("/si", appHandler{context, CreateShippingInfoHandler}.ServerHTTP).Methods("POST")
-//	router.HandleFunc("/cargo", appHandler{context, AddCargoHandler}.ServerHTTP).Methods("POST")
-//	router.HandleFunc("/si/{vn}", appHandler{context, DeleteShippingInfo}.ServerHTTP).Methods("DELETE")
-//
-//	log.Fatal(http.ListenAndServe(":8080", router))
-//
-//}
 

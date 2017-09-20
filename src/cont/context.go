@@ -5,12 +5,13 @@ import (
 	"generalcargo"
 	"db"
 	"shipinfo"
+	"github.com/mux"
 )
 
 type AppContext struct {
 	DB 	*db.DB
-	//CFG 	*db.Config
 	Repo 	*Repositories
+	Router  *mux.Router
 }
 
 type Repositories struct {
